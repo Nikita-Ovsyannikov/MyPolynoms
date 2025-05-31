@@ -30,7 +30,7 @@ public:
     Monomial(int coeff = 0, int dx = 0, int dy = 0, int dz = 0)
         : coefficient(coeff) {
         if (dx < 0 || dx > 9 || dy < 0 || dy > 9 || dz < 0 || dz > 9) {
-            throw std::out_of_range("Degree out of range (0-9)."); // Сообщение сокращено для краткости
+            throw std::out_of_range("Degree out of range (0-9)."); 
         }
         degrees = MonomialDegrees(dx, dy, dz);
         if (coeff == 0) {
